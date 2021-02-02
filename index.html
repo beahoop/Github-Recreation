@@ -54,10 +54,11 @@
 </div>
 <script id="repositories" type="text/x-handlebars-template">
   {{#each rep}}
-    <div class="repdiv">
-      <a class="rep-name" href="{{this.html_url}}">
-        <p>{{this.name}}</p>
+    <div class="repdiv row">
+      <a class="rep-name col-11" href="{{this.html_url}}">
+        <p class="">{{this.name}}</p>
       </a>
+      <button class="col-1 btn btn-sm star"> <i class="far fa-star"></i> Star </button>
       <p class="rep-dec">{{this.description}}</p>
       <p class="rep-lan"><i class="fas fa-circle {{this.language}}"></i> {{this.language}}</p>
     <!-- <p class="updated">Upadted {{this.this.pushed_at}}</p> -->
