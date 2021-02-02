@@ -22,7 +22,7 @@ font-weight: bolder;
 }
 
 .user-pic {
-  width: 300px;
+
   border: solid 1px transparent;
   border-radius: 500px;
 }
@@ -31,7 +31,17 @@ font-weight: bolder;
 }
 
 
+.CSS {
+  color: #524078;
+}
 
+.JavaScript {
+  color: #EFE070;
+}
+
+.HTML {
+  color: #D35635;
+}
 
 /* ---------------------------- RIGHT SIDE */
 .right-side {

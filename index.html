@@ -19,14 +19,14 @@
   </div>
   <script id="user-photo" type="text/x-handlebars-template">
     <div class="row">
-      <img class="user-pic" src="{{this.avatar_url}}" alt="user avatar"/>
-        <p class="col-12 userIRL">{{this.name}}</p>
+      <img class="col-lg-12 user-pic" src="{{this.avatar_url}}" alt="user avatar"/>
+        <p class="col-lg-12 userIRL">{{this.name}}</p>
         <!-- display:inline-block  -->
         <p class="col-12 username">{{this.login}}</p>
         <p class="col-12">{{this.bio}}</p>
         <button class="btn btn-light btn-lg btn-block">Edit profile</button>
-        <p class="col-4">{{this.followers}}</p>
-        <p class="col-4">{{this.following}}</p>
+        <p class="col"><i class="fas fa-users"></i>  {{this.followers}}</p>
+        <p class="col">{{this.following}}</p>
         <p><i class="fas fa-link"></i> {{this.blog}}</p>
       </div>
   </script>
@@ -55,11 +55,11 @@
 <script id="repositories" type="text/x-handlebars-template">
   {{#each rep}}
     <div class="repdiv">
-      <a class="rep-name"href="{{this.html_url}}">
+      <a class="rep-name" href="{{this.html_url}}">
         <p>{{this.name}}</p>
       </a>
       <p class="rep-dec">{{this.description}}</p>
-      <p class="rep-lan">{{this.language}}</p>
+      <p class="rep-lan"><i class="fas fa-circle {{this.language}}"></i> {{this.language}}</p>
     <!-- <p class="updated">Upadted {{this.this.pushed_at}}</p> -->
     </div>
   {{/each}}
