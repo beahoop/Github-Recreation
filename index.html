@@ -12,7 +12,8 @@
   <div class="container">
 
 <div class="row">
-  <div class="col-md-4 left-side justify-content-center">
+  <div class="col-md-4  justify-content-center">
+    <div class="left-side">
 <!-- ***********************************USERS -->
   <div class="user">
   </div>
@@ -26,17 +27,6 @@
         <button class="btn btn-light btn-lg btn-block">Edit profile</button>
         <p class="col-4">{{this.followers}}</p>
         <p class="col-4">{{this.following}}</p>
-  <!-- ***********************************Organizations -->
-          <div class="stared">
-          </div>
-          <script id="stared" type="text/x-handlebars-template">
-            {{#each star}}
-              <div>
-              <img src="{{this.length}}" alt="orgs avatar" />
-              </div>
-            {{/each}}
-          </script>
-          </div>
         <p><i class="fas fa-link"></i> {{this.blog}}</p>
       </div>
   </script>
@@ -47,13 +37,16 @@
     {{#each orgs}}
       <div>
         <p>Organizations</p>
-        <img src="{{this.avatar_url}}" alt="orgs avatar" />
+        <img class="org-pic" src="{{this.avatar_url}}" alt="orgs avatar" />
       </div>
     {{/each}}
   </script>
   </div>
+
 <!-- ***********************************RIGHT-TABS -->
-<div class="col-md-8 right-side">
+</div>
+<div class="col-md-8">
+  <div class="right-side">
 <!-- ***********************************LEFT-TABS -->
 
 <!-- ***********************************REPOSITORIES -->
@@ -65,12 +58,12 @@
       <p>{{this.name}}</p>
       <p>{{this.description}}</p>
       <p>{{this.language}}</p>
-        <p class="updated">Upadted {{this.this.pushed_at}}</p>
-        <!-- update this with moment to say time lapsed -->
+    <!-- <p class="updated">Upadted {{this.this.pushed_at}}</p> -->
     </div>
   {{/each}}
 </script>
 <!-- ***********************************END OF RIGHT -->
+</div>
 </div>
   </div>
 </div>
@@ -78,6 +71,7 @@
   <script src="https://kit.fontawesome.com/8ee7b0e5d5.js" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.6/handlebars.min.js" integrity="sha512-zT3zHcFYbQwjHdKjCu6OMmETx8fJA9S7E6W7kBeFxultf75OPTYUJigEKX58qgyQMi1m1EgenfjMXlRZG8BXaw==" crossorigin="anonymous"></script>
+  <script src="./js/token.js"></script>
   <script src="./js/main.js"></script>
 </body>
 

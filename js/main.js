@@ -49,16 +49,6 @@ fetch(`${BASE_URL}/repos`)
 // document.querySelector(".updated").innerHTML = updated;
 
 
-one template and two fetch request.
+// one template and two fetch request.
 
 /////////////////////////////////////////////STAR
-const generateRep = (data) => {
-  const source = document.getElementById("stared").innerHTML;
-  const template = Handlebars.compile(source);
-  const context = data;
-  const html = template(context);
-  document.querySelector(".stared").innerHTML = html;
-}
-fetch(`${BASE_URL}/repos`)
-  .then(response => response.json())
-  .then(data => generateRep({star:data}));
