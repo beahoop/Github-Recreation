@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Github Recreation</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/base.css">
+</head>
+
+<body>
+  <div class="container">
+
+<div class="row">
+  <div class="col-md-4 left-side justify-content-center">
+<!-- ***********************************USERS -->
+  <div class="user">
+  </div>
+  <script id="user-photo" type="text/x-handlebars-template">
+    <div class="row">
+      <img class="user-pic" src="{{this.avatar_url}}" alt="user avatar"/>
+        <p class="col-12">{{this.name}}</p>
+        <!-- display:inline-block  -->
+        <p class="col-12">{{this.login}}</p>
+        <p class="col-12">{{this.bio}}</p>
+        <button class="btn btn-light btn-lg btn-block">Edit profile</button>
+        <p class="col-4">{{this.followers}}</p>
+        <p class="col-4">{{this.following}}</p>
+  <!-- ***********************************Organizations -->
+          <div class="stared">
+          </div>
+          <script id="stared" type="text/x-handlebars-template">
+            {{#each star}}
+              <div>
+              <img src="{{this.length}}" alt="orgs avatar" />
+              </div>
+            {{/each}}
+          </script>
+          </div>
+        <p><i class="fas fa-link"></i> {{this.blog}}</p>
+      </div>
+  </script>
+<!-- ***********************************Organizations -->
+  <div class="orgs">
+  </div>
+  <script id="orgs" type="text/x-handlebars-template">
+    {{#each orgs}}
+      <div>
+        <p>Organizations</p>
+        <img src="{{this.avatar_url}}" alt="orgs avatar" />
+      </div>
+    {{/each}}
+  </script>
+  </div>
+<!-- ***********************************RIGHT-TABS -->
+<div class="col-md-8 right-side">
+<!-- ***********************************LEFT-TABS -->
+
+<!-- ***********************************REPOSITORIES -->
+<div class="repositories">
+</div>
+<script id="repositories" type="text/x-handlebars-template">
+  {{#each rep}}
+    <div>
+      <p>{{this.name}}</p>
+      <p>{{this.description}}</p>
+      <p>{{this.language}}</p>
+        <p class="updated">Upadted {{this.this.pushed_at}}</p>
+        <!-- update this with moment to say time lapsed -->
+    </div>
+  {{/each}}
+</script>
+<!-- ***********************************END OF RIGHT -->
+</div>
+  </div>
+</div>
+<!-- ***********************************SCRIPTS -->
+  <script src="https://kit.fontawesome.com/8ee7b0e5d5.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.6/handlebars.min.js" integrity="sha512-zT3zHcFYbQwjHdKjCu6OMmETx8fJA9S7E6W7kBeFxultf75OPTYUJigEKX58qgyQMi1m1EgenfjMXlRZG8BXaw==" crossorigin="anonymous"></script>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
