@@ -8,17 +8,56 @@ flex-direction: column;
 .left-side {
 padding-top: 25px;
 }
-
-.right-side {
-  padding-top: 25px;
-  padding-left: 25px;
+.userIRL {
+font-size: 1.75rem;
+font-weight: bolder;
 }
+
+.username {
+  text-align: left;
+  font-weight: 300;
+  font-size: 1.5rem;
+  color: #596068;
+  margin-top: -30px;
+}
+
 .user-pic {
   width: 300px;
   border: solid 1px transparent;
   border-radius: 500px;
 }
-
 .org-pic {
   width: 25px;
+}
+
+
+
+
+/* ---------------------------- RIGHT SIDE */
+.right-side {
+  padding-top: 25px;
+  padding-left: 25px;
+}
+.rep-name {
+  font-weight: bolder;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.repdiv {
+  border-bottom: solid 1px #EAECEF;
+  padding: 10px 0px 0px 0px;
+}
+
+.rep-dec, .rep-lan {
+  color: #596068;
+  font-size: .75rem;
+}
+
+.rep-dec {
+  margin-top: -15px;
+}
+
+.rep-lan {
+  margin-top: -10px;
 }

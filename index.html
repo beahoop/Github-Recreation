@@ -12,7 +12,7 @@
   <div class="container">
 
 <div class="row">
-  <div class="col-md-4  justify-content-center">
+  <div class="col-md-3  justify-content-center">
     <div class="left-side">
 <!-- ***********************************USERS -->
   <div class="user">
@@ -20,9 +20,9 @@
   <script id="user-photo" type="text/x-handlebars-template">
     <div class="row">
       <img class="user-pic" src="{{this.avatar_url}}" alt="user avatar"/>
-        <p class="col-12">{{this.name}}</p>
+        <p class="col-12 userIRL">{{this.name}}</p>
         <!-- display:inline-block  -->
-        <p class="col-12">{{this.login}}</p>
+        <p class="col-12 username">{{this.login}}</p>
         <p class="col-12">{{this.bio}}</p>
         <button class="btn btn-light btn-lg btn-block">Edit profile</button>
         <p class="col-4">{{this.followers}}</p>
@@ -45,7 +45,7 @@
 
 <!-- ***********************************RIGHT-TABS -->
 </div>
-<div class="col-md-8">
+<div class="col-md-9">
   <div class="right-side">
 <!-- ***********************************LEFT-TABS -->
 
@@ -54,10 +54,12 @@
 </div>
 <script id="repositories" type="text/x-handlebars-template">
   {{#each rep}}
-    <div>
-      <p>{{this.name}}</p>
-      <p>{{this.description}}</p>
-      <p>{{this.language}}</p>
+    <div class="repdiv">
+      <a class="rep-name"href="{{this.html_url}}">
+        <p>{{this.name}}</p>
+      </a>
+      <p class="rep-dec">{{this.description}}</p>
+      <p class="rep-lan">{{this.language}}</p>
     <!-- <p class="updated">Upadted {{this.this.pushed_at}}</p> -->
     </div>
   {{/each}}
