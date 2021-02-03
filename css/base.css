@@ -5,13 +5,75 @@ background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%,
 display: flex;
 flex-direction: column;
 }
+nav {
+  width: 101%;
+  background-color: #25292E;
+}
+.nav-form {
+  height: 2rem;
+  margin-top: 1%;
+  width: 25%;
+  color: white;
+  margin-left: -10%;
+  border: 1px solid #3F464D;
+  border-radius: 5px;
+  background-color: transparent;
+}
+
+.navbtn {
+  align-self: center;
+}
+
+nav span {
+  color: white;
+  font-size: .9rem;
+  padding-right: 10px;
+  font-weight: bold;
+}
+.fa-github {
+  color: white;
+  font-size: 2.5rem;
+  padding: 10px 0px 10px 25px;
+}
+.nav-i {
+  text-align: center;
+  margin-left: -14%;
+}
+.fa-bell, .fa-plus {
+  padding-top: 11%;
+  margin-right: 10%;
+  color: white;
+  font-size: 1rem;
+}
+
+
+
+
+
+
 
 .left-side {
 padding-top: 25px;
+margin-left: 50px;
 }
 .userIRL {
 font-size: 1.75rem;
 font-weight: bolder;
+position: relative;
+}
+
+.fa-smile {
+  padding-left: 8px;
+  padding-top: 8px;
+  position: absolute;
+  top: 52%;
+  left: 24%;
+  width: 35px;
+  text-align: center;
+  height: 35px;
+  background-color: white;
+  border: solid 1px #EAECEF;
+  border-radius: 50px;;
 }
 
 .username {
@@ -78,4 +140,13 @@ font-weight: bolder;
 
 .rep-lan {
   margin-top: -10px;
+}
+
+@media (max-width: 1200px) {
+  .fa-smile {
+  border: none;
+  background-color: transparent;
+  color: transparent;
+  }
+
 }

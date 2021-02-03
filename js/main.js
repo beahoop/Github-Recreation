@@ -1,11 +1,13 @@
 const BASE_URL = 'https://api.github.com/users/beahoop';
 
 console.log('hi');
-fetch(`${BASE_URL}`, {
-    headers: {
-      Authorization: `token ${GITHUB_TOKEN}`
-    }
-  })
+fetch(`${BASE_URL}`
+  // , {
+  //   headers: {
+  //     Authorization: `token ${GITHUB_TOKEN}`
+  //   }
+  // }
+)
   .then(response => response.json())
   .then(data => console.log(data));
 ////////////////////////////////////////USER INFO
@@ -47,8 +49,24 @@ fetch(`${BASE_URL}/repos`)
 
 // const updated = moment("this.pushed_at", "YYYYMMDD").fromNow();
 // document.querySelector(".updated").innerHTML = updated;
-
+fetch(`${BASE_URL}/repos`)
+  .then(response =>
+    // {
+    // fetch()
+    //   .then
+    //     .then
+    response.json()
+  // }
+)
+  .then(data => generateRep({rep:data}));
 
 // one template and two fetch request.
 
 /////////////////////////////////////////////STAR
+// fetch(`${BASE_URL}`)
+//   .then(response => {
+//     fetch(`${BASE_URL}/Star`)
+//       .then ()
+//         .then ()
+//     response.json()}
+// )

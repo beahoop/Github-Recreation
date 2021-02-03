@@ -9,6 +9,20 @@
 </head>
 
 <body>
+  <nav class="row">
+    <i class="col-2 fab fa-github"></i>
+    <input type="search" id="form1" class="col-4 nav-form" placeholder="Search or jump to..." />
+    <div class="col-6 navbtn">
+    <span>Pull request</span>
+    <span>Issues</span>
+    <span>Marketplace</span>
+    <span>Explore</span>
+    </div>
+    <div class=" col-2 nav-i">
+    <i class="fas fa-bell"></i>
+    <i class="fas fa-plus"></i>
+  </div>
+  </nav>
   <div class="container">
 
 <!-- ***********************************somedvss -->
@@ -24,6 +38,7 @@
         <p class="col-lg-12 userIRL">{{this.name}}</p>
         <!-- display:inline-block  -->
         <p class="col-12 username">{{this.login}}</p>
+        <i class="far fa-smile"></i>
         <p class="col-12">{{this.bio}}</p>
         <button class="btn btn-light btn-lg btn-block">Edit profile</button>
         <p class="col"><i class="fas fa-users"></i>  {{this.followers}}</p>
@@ -50,6 +65,7 @@
   <div class="right-side">
 <!-- ***********************************LEFT-TABS -->
 <!-- ***********************************Find -->
+<div class ="col-9">
 <div class="input-group">
   <div class="col-5 form-outline">
     <input type="search" id="form1" class="form-control" placeholder="Find a repository..." />
@@ -67,6 +83,7 @@
   <option value="3">exsample</option>
 </select>
 <button class="text-center btn btn-primary ml-3"><i class="fas fa-book"></i> New</button>
+</div>
 <!-- ***********************************REPOSITORIES -->
 <div class="repositories">
 </div>
